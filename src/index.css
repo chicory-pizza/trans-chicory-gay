@@ -6,10 +6,11 @@
 }
 
 body {
-	background: #fff;
+	background: linear-gradient(to bottom, #f7b5c8, #5aceeb);
 	color: #000;
 	cursor: default;
 	text-align: left;
+	overflow: hidden;
 	user-select: none;
 
 	font-family: sans-serif;
@@ -22,4 +23,10 @@ a {
 
 :focus {
 	outline: 1px solid rgb(182, 154, 255);
+}
+
+html,
+body,
+#root {
+	height: 100%;
 }

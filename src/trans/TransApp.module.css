@@ -1,0 +1,35 @@
+.app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+}
+
+.hare {
+	--hover-scale: 1.1;
+	--normal-scale: 1;
+	--active-scale: 0.9;
+
+	background: url('./trans_hare.png') no-repeat;
+	width: 512px;
+	height: 512px;
+
+	cursor: pointer;
+	outline: 0;
+	transition: transform 0.2s ease;
+	transform-origin: 15% 80%;
+	transform: scale(var(--normal-scale));
+}
+
+.hare:hover {
+	transform: scale(var(--hover-scale));
+}
+
+.hare:active {
+	transform: scale(var(--active-scale));
+}
+
+.hare:focus {
+	outline: 0;
+}

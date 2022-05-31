@@ -2,6 +2,8 @@
 
 Website for [https://trans.chicory.gay](https://trans.chicory.gay)
 
+<img alt="Trans Chicory" src=".src/trans/trans_hare.png" width="512" height="512" />
+
 ## Development
 
 Requirements:
@@ -21,3 +23,5 @@ This project was bootstrapped with [Create React App](https://create-react-app.d
 ## License
 
 The web app is licensed under the [MPL 2.0 License](https://www.mozilla.org/en-US/MPL/2.0/).
+
+Original image by [Temulgeh](https://twitter.com/Temulgeh).
