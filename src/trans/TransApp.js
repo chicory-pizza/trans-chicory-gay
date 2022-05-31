@@ -18,7 +18,7 @@ export default function TransApp(): React$MixedElement {
 			return clickCount + 1;
 		});
 
-		console.log('You clicked the hare ' + (clickCount + 1) + ' times!');
+		console.log('You clicked Chicory ' + (clickCount + 1) + ' times!');
 
 		playHareSound();
 	}, [clickCount, playHareSound, setNewClickCount]);

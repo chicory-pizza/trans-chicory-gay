@@ -30,3 +30,14 @@ body,
 #root {
 	height: 100%;
 }
+
+#noscript-error {
+	font-size: 2em;
+	padding: 2em;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
