@@ -2,7 +2,7 @@
 
 Website for [https://trans.chicory.gay](https://trans.chicory.gay)
 
-<img alt="Trans Chicory" src=".src/trans/trans_hare.png" width="512" height="512" />
+<img alt="Trans Chicory" src="public/trans_hare.png" width="512" height="512" />
 
 ## Development
 
