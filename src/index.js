@@ -6,10 +6,10 @@ import {createRoot} from 'react-dom/client';
 import ErrorBoundary from './ErrorBoundary';
 import TransApp from './trans/TransApp';
 import './index.css';
-import {paintdogConsoleText} from './util/paintdogConsoleText';
+import {hareConsoleText} from './util/hareConsoleText';
 
 // Start
-console.log(paintdogConsoleText);
+console.log(hareConsoleText);
 
 const container = document.getElementById('root');
 if (container == null) {

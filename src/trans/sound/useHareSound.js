@@ -36,7 +36,7 @@ function shuffleArray(array: Array<string>): Array<string> {
 }
 
 export default function useHareSound(): () => void {
-	const [sequence, setSequence] = useState(
+	const [sequence, setSequence] = useState(() =>
 		shuffleArray([...SOUND_SPRITE_KEYS])
 	);
 
