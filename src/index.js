@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+// @flow strict
+
+import {StrictMode} from 'react';
+import {createRoot} from 'react-dom/client';
+
+import ErrorBoundary from './ErrorBoundary';
+import TransApp from './trans/TransApp';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {paintdogConsoleText} from './util/paintdogConsoleText';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Start
+console.log(paintdogConsoleText);
+
+const container = document.getElementById('root');
+if (container == null) {
+	throw new Error('App root container is missing');
+}
+
+const root = createRoot(container);
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+	<StrictMode>
+		<ErrorBoundary>
+			<TransApp />
+		</ErrorBoundary>
+	</StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
