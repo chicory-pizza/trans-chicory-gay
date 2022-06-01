@@ -31,7 +31,7 @@
 	transform: scale(var(--normal-scale));
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
 	.hare {
 		width: 512px;
 		height: 512px;

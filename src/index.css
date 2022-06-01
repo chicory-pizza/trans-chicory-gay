@@ -45,3 +45,42 @@ button {
 	justify-content: center;
 	height: 100%;
 }
+
+/* Links */
+#links {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 20;
+
+	display: flex;
+
+	padding: 8px;
+	padding-right: calc(env(safe-area-inset-right) + 8px);
+	padding-top: calc(env(safe-area-inset-top) + 8px);
+}
+
+.websiteLink {
+	opacity: 0.6;
+	margin-left: 8px;
+}
+
+.websiteLink:hover,
+.websiteLink:active,
+.websiteLink:focus {
+	opacity: 1;
+}
+
+.discordIcon,
+.githubIcon {
+	width: 20px;
+	height: 20px;
+	display: block;
+	fill: #171515;
+}
+
+.websiteLink:hover .discordIcon,
+.websiteLink:active .discordIcon,
+.websiteLink:focus .discordIcon {
+	fill: #5865f2;
+}
