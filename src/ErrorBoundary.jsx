@@ -1,6 +1,6 @@
 // @flow strict
 
-import {Component} from 'react';
+import {Component} from 'preact';
 
 type Props = $ReadOnly<{
 	canReload?: boolean,

@@ -1,6 +1,6 @@
 // @flow strict
 
-import {useState} from 'react';
+import {useState} from 'preact/hooks';
 // $FlowFixMe[untyped-import]
 import useSound from 'use-sound';
 

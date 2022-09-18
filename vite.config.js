@@ -1,11 +1,11 @@
 import {flowPlugin, esbuildFlowPlugin} from '@bunchtogether/vite-plugin-flow';
-import react from '@vitejs/plugin-react';
+import preact from '@preact/preset-vite';
 import {defineConfig} from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
-		react({
+		preact({
 			babel: {
 				presets: ['@babel/preset-flow'],
 			},
@@ -47,6 +47,12 @@ export default defineConfig({
 
 			'Feature-Policy':
 				"accelerometer 'none';ambient-light-sensor 'none';battery 'none';camera 'none';display-capture 'none';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'none';usb 'none';xr-spatial-tracking 'none';",
+		},
+	},
+	resolve: {
+		alias: {
+			react: 'preact/compat',
+			'react-dom': 'preact/compat',
 		},
 	},
 	test: {

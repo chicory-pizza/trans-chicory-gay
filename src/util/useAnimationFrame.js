@@ -2,7 +2,7 @@
 
 // https://css-tricks.com/using-requestanimationframe-with-react-hooks/
 
-import {useCallback, useEffect, useRef} from 'react';
+import {useCallback, useEffect, useRef} from 'preact/hooks';
 
 export default function useAnimationFrame(
 	callback: (deltaTime: number) => mixed

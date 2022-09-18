@@ -1,6 +1,6 @@
 // @flow strict
 
-import {useCallback} from 'react';
+import {useCallback} from 'preact/hooks';
 
 import useLocalStorage from '../util/useLocalStorage';
 

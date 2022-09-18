@@ -1,6 +1,6 @@
 // @flow strict
 
-import {useCallback, useState} from 'react';
+import {useCallback, useState} from 'preact/hooks';
 
 export default function useLocalStorage<T>(
 	key: string,

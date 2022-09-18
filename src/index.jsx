@@ -1,7 +1,6 @@
 // @flow strict
 
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
+import {render} from 'preact';
 
 import ErrorBoundary from './ErrorBoundary';
 import TransApp from './trans/TransApp';
@@ -16,11 +15,9 @@ if (container == null) {
 	throw new Error('App root container is missing');
 }
 
-const root = createRoot(container);
-root.render(
-	<StrictMode>
-		<ErrorBoundary>
-			<TransApp />
-		</ErrorBoundary>
-	</StrictMode>
+render(
+	<ErrorBoundary>
+		<TransApp />
+	</ErrorBoundary>,
+	container
 );

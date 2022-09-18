@@ -1,6 +1,6 @@
 // @flow strict
 
-import {useCallback, useState} from 'react';
+import {useCallback, useState} from 'preact/hooks';
 
 import useAnimationFrame from '../util/useAnimationFrame';
 
