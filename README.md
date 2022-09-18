@@ -16,9 +16,7 @@ Steps:
 2. npm install
 3. npm start
 
-This should open the web app at http://localhost:3000
-
-This project was bootstrapped with [Create React App](https://create-react-app.dev/docs/getting-started/).
+This should open the web app at http://localhost:5173
 
 ## License
 
