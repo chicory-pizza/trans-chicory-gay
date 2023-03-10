@@ -6,6 +6,19 @@
 	height: 100%;
 }
 
+.count {
+	position: absolute;
+	z-index: 19;
+	top: 0;
+	left: 0;
+
+	padding: 8px;
+	padding-left: calc(env(safe-area-inset-left) + 8px);
+	padding-top: calc(env(safe-area-inset-top) + 8px);
+
+	font-size: 150%;
+}
+
 .hare {
 	--hover-scale: 1.1;
 	--normal-scale: 1;

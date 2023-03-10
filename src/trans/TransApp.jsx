@@ -39,6 +39,12 @@ export default function TransApp(): React$MixedElement {
 				/>
 			</div>
 
+			{clickCount >= 5 ? (
+				<div className={styles.count} data-testid="counter">
+					{clickCount}
+				</div>
+			) : null}
+
 			<PageBackground />
 		</>
 	);
